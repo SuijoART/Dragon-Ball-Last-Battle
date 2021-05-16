@@ -1,0 +1,275 @@
+;----------------------------
+[Info]
+name = "Fight"          
+author = "SuijoART"      
+versiondate = 05,02,2020 
+mugenversion = 1.0        
+localcoord = 640,480  
+;----------------------------
+[Files]
+sff = Fight.sff
+snd = Fight.snd
+font1 = Text1.def
+fightfx.sff = Fightfx.sff
+fightfx.air = Fightfx.air
+common.snd = Common.snd
+;----------------------------
+[FightFx]
+scale = 2
+;----------------------------
+[Lifebar]
+p1.pos    = 0,0
+p1.bg0.spr = 0,0
+p1.bg0.offset = 0,0
+p1.mid.spr = 2,0
+p1.mid.offset = 17,9
+p1.front.spr = 3,0
+p1.front.offset = 17,9
+p1.range.x  = 17,234
+
+p2.pos    = 639,0
+p2.bg0.spr = 1,0
+p2.bg0.offset = 0,0
+p2.bg0.facing = -1
+p2.mid.spr = 2,0
+p2.mid.offset = -17,9
+p2.mid.facing = -1
+p2.front.spr = 3,0
+p2.front.offset = -17,9
+p2.front.facing = -1
+p2.range.x = -17,-234
+;----------------------------
+[Simul Lifebar]
+;----------------------------
+[Turns Lifebar]
+;----------------------------
+[Powerbar]
+p1.front.spr = 4,0
+p1.front.offset = 17,21
+p1.range.x = 17,234
+p1.counter.offset = 248,43
+p1.counter.font = 1,0,0
+
+p2.front.spr = 4,0
+p2.front.offset = 622,21
+p2.front.facing = -1
+p2.range.x  = 622,405
+p2.counter.offset = 392,43
+p2.counter.font = 1,0,0
+
+level1.snd = 0,0
+level2.snd = 0,0
+level3.snd = 0,0
+
+;----------------------------
+[Face]
+p1.face.spr = 9000,0
+p1.face.facing = 1
+p1.face.offset = 17,40
+
+p2.face.spr = 9000,0
+p2.face.facing = -1
+p2.face.offset = 622,40
+
+[Simul Face]
+;----------------------------
+[Turns Face]
+;----------------------------
+[Name]
+p1.pos = 159,59
+p1.name.font = 1,0,0
+
+p2.pos = 482,59
+p2.name.font = 1,0,0
+;----------------------------
+[Simul Name]
+;----------------------------
+[Turns Name]
+;----------------------------
+[Time]
+pos = 276,0
+bg.anim = 8
+
+counter.offset = 29,77
+counter.font = 1,0,1
+framespercount = 60
+
+;-----[ANIMATION CODE]-------
+[Begin Action 8]
+8,0, 0,0, 30
+8,1, 0,0, 30
+;----------------------------
+[Combo]
+;team1.pos = 20,260        ;Coords to show
+;team1.start.x = -240      ;Starting x-coords
+;team1.counter.font = 1,0,1
+;team1.counter.shake = 1   ;Set to 1 to shake count on hit
+;team1.text.text = "COMBO" ;You can use %i to show count in the text, eg "%i Hit!"
+;team1.text.font = 1,0,1
+;team1.text.offset = 12,0   ;Offset of text
+;team1.displaytime = 90    ;Time to show text
+;team2.pos = 390,260      ;Coords to show
+;team2.start.x = 1520      ;Starting x-coords
+;team2.counter.font = 1,0,-1
+;team2.counter.shake = 1   ;Set to 1 to shake count on hit
+;team2.text.text = "COMBO" ;You can use %i to show count in the text, eg "%i Hit!"
+;team2.text.font = 1,0,-1
+;team2.text.offset = 12,0  ;Offset of text
+;team2.displaytime = 90    ;Time to show text
+;----------------------------
+[Round]
+match.wins = 2              
+match.maxdrawgames = 1      
+start.waittime = 30         
+
+pos = 0,0
+
+round.time = 0              
+round.default.offset = 0,0
+
+round.default.font = 1,0,0
+round.default.text = "Round %i"
+round.default.displaytime = 180
+round.default.scale = 1,1
+
+round1.snd = 0,1
+round2.snd = 0,2
+round3.snd = 0,3
+round.sndtime = 10           
+
+round1.offset = 180,220
+round1.anim = 9
+
+round2.offset = 180,220
+round2.anim = 10
+
+round3.offset = 180,220
+round3.anim = 11
+
+fight.time = 80             
+fight.offset = 0,0    
+fight.anim = 12            
+fight.snd = 1,0             
+fight.sndtime = 110           
+
+ctrl.time = 130              
+
+KO.time    = 0            
+KO.offset  = 0,0       
+KO.anim    = 13
+K0.displaytime = 180           
+KO.snd     = 2,0            
+
+DKO.offset = 0,0
+DKO.font   = 1,5
+DKO.spr   = 14,0
+DKO.displaytime = 180
+DKO.snd    = 2,1
+
+TO.offset  = 0, 0
+TO.spr   = 15,0
+TO.displaytime = 180
+TO.snd     = 2,2
+KO.sndtime = 0           
+slow.time  = 60            
+over.waittime = 45         
+over.hittime = 10          
+over.wintime = 45          
+over.time = 210            
+
+win.time = 60
+
+win.offset = 320,240
+win.font = 1,0,0
+win.text = "WINNER : %s"
+win.displaytime = 540
+
+;win2.offset = 320,240
+;win2.font = 1,0,0
+;win2.text = "WINNER : %s AND %s"
+;win2.displaytime = 540
+
+draw.offset = 320,240
+draw.font = 1,0,0
+draw.text = "Draw Game"
+draw.displaytime = 540
+
+;-----[ANIMATION CODE]-------
+[Begin Action 9] ;Round 1
+9,0, 0,0, 10
+9,1, 0,0, 10
+9,2, 0,0, 10
+9,3, 0,0, 10
+9,4, 0,0, 10
+9,5, 0,0, 10
+9,6, 0,0, 10
+9,5, 0,0, 10
+9,4, 0,0, 10
+9,3, 0,0, 10
+9,2, 0,0, 10
+9,1, 0,0, 10
+9,0, 0,0, 10
+
+[Begin Action 10] ;Round 2
+10,0, 0,0, 10
+10,1, 0,0, 10
+10,2, 0,0, 10
+10,3, 0,0, 10
+10,4, 0,0, 10
+10,5, 0,0, 10
+10,6, 0,0, 10
+10,5, 0,0, 10
+10,4, 0,0, 10
+10,3, 0,0, 10
+10,2, 0,0, 10
+10,1, 0,0, 10
+10,0, 0,0, 10
+
+[Begin Action 11] ;Round 3
+11,0, 0,0, 10
+11,1, 0,0, 10
+11,2, 0,0, 10
+11,3, 0,0, 10
+11,4, 0,0, 10
+11,5, 0,0, 10
+11,6, 0,0, 10
+11,5, 0,0, 10
+11,4, 0,0, 10
+11,3, 0,0, 10
+11,2, 0,0, 10
+11,1, 0,0, 10
+11,0, 0,0, 10
+
+[Begin Action 12] ;Fight
+12,0, 0,0, 30
+12,1, 0,0, 60
+
+[Begin Action 13] ;K.O
+13,0, 0,0, 180
+;----------------------------
+[WinIcon]
+p1.pos = 200,74
+p1.iconoffset = 31,0  
+p1.n.spr = 16,0
+p1.s.spr = 16,0
+p1.h.spr = 16,0
+p1.throw.spr = 16,0
+p1.c.spr = 16,0
+p1.t.spr = 16,0
+p1.suicide.spr = 16,0
+p1.teammate.spr = 16,0
+p1.perfect.spr = 16,0
+
+p2.pos = 412,74
+p2.iconoffset = -31,0
+p2.n.spr = 16,0
+p2.s.spr = 16,0
+p2.h.spr = 16,0
+p2.throw.spr = 16,0
+p2.c.spr = 16,0
+p2.t.spr = 16,0
+p2.suicide.spr = 16,0
+p2.teammate.spr = 16,0
+p2.perfect.spr = 16,0
+
+useiconupto = 3

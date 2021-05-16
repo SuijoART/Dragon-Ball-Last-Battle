@@ -1,0 +1,27 @@
+;----------------------------
+[Info]
+name = "Intro"          
+author = "SuijoART"      
+versiondate = 05,02,2020 
+mugenversion = 1.0        
+localcoord = 640,480  
+;----------------------------
+[SceneDef]
+spr = Intro.sff       
+;----------------------------
+[Scene 00]
+fadein.time = 15
+fadeout.time = 15
+layer0.anim = 0
+layer1.anim = 1
+bgm = Intro.mp3
+end.time = 10380         
+
+;-----[ANIMATION CODE]-------
+[Begin Action 0]
+0,0, 0,0, -1
+
+[Begin Action 1]
+1,0, 0,0, 30
+1,1, 0,0, 30
+

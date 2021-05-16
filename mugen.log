@@ -1,0 +1,121 @@
+------------------------------------------
+M.U.G.E.N ver 1.00 (2011.01.18) status log
+------------------------------------------
+Parsing command line...
+Command line: H:\home\housseiny\Dragon Ball - Last Battle\Dragon Ball - Last Battle.exe
+Parse command line OK
+Initializing...
+Allocating game variables
+Reading configuration file...OK
+Initializing timer...performance timer enabled...frequency 10000000...OK
+Initializing keyboard...configuring...OK
+Initializing input engine...OK
+Initializing sound...Using SDL audio driver: dsound
+Requesting mixer parameters (44100, 16, 2, 2048)...
+Opened mixer with parameters (44100, 16, 2, 2048)...
+OK
+Initializing BGM...BGMThreadInit returned 0
+OK
+Initializing graphics...gameCoord 640x480...render mode 0_1...trying 640x480x16 mode 0x0...success...OK
+Setting callbacks...OK
+Initializing font...OK
+Initializing game variables...OK
+Loading system fonts...OK
+Loading options...
+Initializing pads...failed
+Reinitializing input engine...OK
+Remapping keys...OK
+Reinitializing input engine...OK
+Options loaded OK
+Loading system...
+  Load system file System.def...OK
+  Load system spr...OK
+  Load system snd...OK
+  Load system fonts...OK
+  Load system anim...OK
+  Load [Title Info]...OK
+  Load [Option Info]...OK
+  Load [Select Info]...OK
+  Load [VS Screen]...OK
+  Load [Victory Screen]...OK
+  Load [Demo Mode]...OK
+  Load [Continue Screen]...OK
+  Load [Game Over Screen]...OK
+  Load [Win Screen]...OK
+  Load [Survival Results Screen]...OK
+  Load [Default Ending]...OK
+  Load [End Credits]...OK
+  Load TitleBG...VersusBG...VictoryBG...Error loading VictoryBG
+SelectBG...OptionBG...OK
+  Loading fight data
+    Opening fight data file Data/Fight.def...OK
+    Reading [Files]...OK
+    Loading fonts...OK
+    Load fight anim...OK
+    Reading [Lifebar]...[Turns Lifebar]...[Simul Lifebar]...[Powerbar]...
+    [Face]...[Simul Face]...[Turns Face]...
+    [Name]...[Simul Name]...[Turns Name]...
+    [Time]...[Combo]...[Round]...[WinIcon]...OK
+    Allocating explods...OK
+  Fight data loaded OK
+System loaded OK
+Initialize OK
+Set up graphics...timer...OK
+Playing storyboard Logo.def: scene
+Storyboard playback canceled 10:0 k72 p0
+Finished playing storyboard Logo.def: scene
+Initializing character info...OK
+Initializing select screen...finding characters...
+  Error reading character file: chars/EMPTY/EMPTY.def
+
+  Error reading character file: chars/EMPTY/EMPTY.def
+
+  Error reading character file: chars/EMPTY/EMPTY.def
+
+  Error reading character file: chars/EMPTY/EMPTY.def
+
+  Error reading character file: chars/EMPTY/EMPTY.def
+
+  Error reading character file: chars/EMPTY/EMPTY.def
+
+  Error reading character file: chars/EMPTY/EMPTY.def
+OK
+
+Entering main loop
+Playing storyboard Intro.def: scene
+attempting load and start...attempting load of Data/intro.mp3...hooking mixer callback...
+success!
+starting BGM...
+Storyboard playback canceled by Esc
+Finished playing storyboard Intro.def: scene
+Entering character select.
+attempting load and start...attempting load of sound\title.mp3...success!
+starting BGM...
+Returned from main loop
+Deinitializing...
+Frames      : 0
+Time elapsed: 3.270 sec
+ticks: 327, tps: 100, start 33, end 360
+
+Clearing player cache...OK
+Freeing character info...OK
+Freeing select screen...OK
+Freeing fight data...OK
+Freeing system data...OK
+Freeing game variables...OK
+Deinitializing input...pad...keyboard...OK
+Removing callbacks...OK
+Deintializing timer...OK
+Deinitializing graphics...OK
+Deinitializing BGM...Cleaning up mixer callback...unhooking mixer callback...
+
+Mixer callback was entered 45 times
+Mixer callback timing stats (last 45 calls):
+	67.000000 median, 72.466667 avg, 17.229072 sample std. dev.
+Top 10 slowest times:	128 (1), 111 (1), 105 (1), 95 (1), 94 (1), 91 (1), 90 (1), 87 (1), 86 (2), 85 (1)
+Top 10 fastest times:	44 (1), 49 (1), 50 (1), 52 (1), 53 (1), 57 (2), 58 (1), 60 (3), 61 (3), 63 (2)
+OK
+Deinitializing sound...OK
+Successful program termination.
+
+Log file successfully closed.

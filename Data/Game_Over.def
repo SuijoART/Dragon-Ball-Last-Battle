@@ -1,0 +1,20 @@
+;----------------------------
+[Info]
+name = "Game_Over"          
+author = "SuijoART"      
+versiondate = 05,02,2020 
+mugenversion = 1.0        
+localcoord = 640,480  
+;----------------------------
+[SceneDef]
+spr = Game_Over.sff       
+;----------------------------
+[Scene 00]
+fadein.time = 15
+fadeout.time = 15
+layer0.anim = 0
+end.time = 350      
+
+;-----[ANIMATION CODE]-------
+[Begin Action 0]
+0,0, 0,0, -1

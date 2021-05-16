@@ -1,0 +1,9 @@
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.
+[id3.c:799] error: ID3v2: Duh, not able to read ID3v2 tag data.

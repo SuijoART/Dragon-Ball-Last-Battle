@@ -1,0 +1,11 @@
+[FNT v2]
+fntversion = 2,00
+name = "Text3"
+author = "SuijoART"
+
+[Def]
+Type = bitmap
+Size = 48,45
+Spacing = 1,0
+Offset = 0,0
+File = Text3.sff

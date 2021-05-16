@@ -1,0 +1,26 @@
+[Info]
+name = "Goku"       
+displayname = "Goku"
+versiondate = 05,02,2020   
+mugenversion = 1.0          
+author = "SuijoART"      
+pal.defaults = 1,2,3,4     
+localcoord = 320,240      
+
+[Files]
+cmd     = Goku.cmd
+cns     = Goku.cns          
+st      = Goku.cns           
+stcommon = common1.cns     
+sprite  = Goku.sff          
+anim    = Goku.air          
+sound   = Goku.snd           
+ai      = Goku.ai           
+
+[Palette Keymap]
+a = 1
+b = 2
+
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 

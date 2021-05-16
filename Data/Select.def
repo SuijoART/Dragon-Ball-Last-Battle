@@ -1,0 +1,28 @@
+;----------------------------
+[Info]
+name = "Select"          
+author = "SuijoART"      
+versiondate = 05,02,2020 
+mugenversion = 1.0        
+localcoord = 640,480  
+;----------------------------
+[Characters]
+RANDOMSELECT
+Goku
+EMPTY
+EMPTY
+EMPTY
+EMPTY
+EMPTY
+EMPTY
+EMPTY
+Freeza
+Vegeta
+RANDOMSELECT
+;----------------------------
+[ExtraStages]
+Stages/Namek.def
+Stages/Grassland.def
+;----------------------------
+[Options]
+arcade.maxmatches = 3,0,0,0,0,0,0,0,0,0

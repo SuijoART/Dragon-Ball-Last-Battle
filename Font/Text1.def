@@ -1,0 +1,11 @@
+[FNT v2]
+fntversion = 2,00
+name = "Text1"
+author = "SuijoART"
+
+[Def]
+Type = bitmap
+Size = 27,23
+Spacing = 1,0
+Offset = 0,0
+File = Text1.sff

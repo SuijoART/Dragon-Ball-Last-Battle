@@ -1,0 +1,11 @@
+;----------------------------
+[FNT v2]
+fntversion = 2,00
+name = "Menu"
+;----------------------------
+[Def]
+Type = bitmap
+Size = 640,209
+Spacing = 0,0
+Offset = 0,0
+File = Menu.sff

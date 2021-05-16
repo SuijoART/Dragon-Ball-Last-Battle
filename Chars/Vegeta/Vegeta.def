@@ -1,0 +1,26 @@
+[Info]
+name = "Vegeta"      
+displayname = "Vegeta"
+versiondate = 05,02,2020
+mugenversion = 1.0
+author = "SuijoART"
+pal.defaults = 1,2,3,4
+localcoord = 320,240
+
+[Files]
+cmd     = Vegeta.cmd
+cns     = Vegeta.cns          
+st      = Vegeta.cns           
+stcommon = common1.cns     
+sprite  = Vegeta.sff          
+anim    = Vegeta.air          
+sound   = Vegeta.snd           
+ai      = Vegeta.ai           
+
+[Palette Keymap]
+a = 1
+b = 2
+
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 

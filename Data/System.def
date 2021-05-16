@@ -1,0 +1,345 @@
+;----------------------------
+[Info]
+name = "System"          
+author = "SuijoART"      
+versiondate = 05,02,2020 
+mugenversion = 1.0        
+localcoord = 640,480      
+;----------------------------
+[Files]
+spr = System.sff          
+snd = System.snd         
+logo.storyboard = Logo.def        
+intro.storyboard = Intro.def       
+select = Select.def       
+fight = Fight.def        
+font1 = Font\Menu.def   
+font2 = Font\Text1.def
+font3 = Font\Text2.def
+font4 = Font\Text3.def
+font5 = Font\infofont.def              
+;----------------------------
+[Music]
+title.bgm = Sound\Title.mp3
+title.bgm.volume = 50    
+title.bgm.loop = 1        
+title.bgm.loopstart = 
+title.bgm.loopend = 
+  
+select.bgm = Sound\Selection.mp3
+select.bgm.volume = 50
+select.bgm.loop = 1
+select.bgm.loopstart =
+select.bgm.loopend = 
+  
+vs.bgm = 
+vs.bgm.volume =  100
+vs.bgm.loop = 0
+vs.bgm.loopstart = 1
+vs.bgm.loopend = 
+  
+victory.bgm = 
+victory.bgm.volume = 100
+victory.bgm.loop = 0
+victory.bgm.loopstart = 1
+victory.bgm.loopend = 
+;----------------------------
+[Title Info]
+fadein.time = 10
+fadeout.time = 10
+menu.pos = 320,374
+menu.item.font = 1,0,0
+menu.item.active.font = 1,0,0
+menu.item.spacing = 0, 209
+
+menu.itemname.arcade = "1"
+menu.itemname.versus = "2"
+menu.itemname.teamarcade = ""
+menu.itemname.teamversus = ""
+menu.itemname.teamcoop = ""
+menu.itemname.survival = ""
+menu.itemname.survivalcoop = ""
+menu.itemname.training = "3"
+menu.itemname.watch = ""
+menu.itemname.options = "4"
+menu.itemname.exit = "5"
+
+menu.window.margins.y = 209,0
+menu.window.visibleitems = 1
+menu.boxcursor.visible = 0     
+menu.boxcursor.coords = 
+
+cursor.move.snd = 1,0
+cursor.done.snd = 4,0
+cancel.snd = 6,0
+;----------------------------
+[TitleBGdef]
+
+[TitleBG 00] ;Shenron Background
+type = normal
+spriteno = 0,0
+
+[TitleBG 01] ;Clouds
+type = normal
+spriteno = 1,0
+mask = 1
+tile = 1,0
+velocity = -1,0
+
+[TitleBG 02] ;Menu
+type = normal
+spriteno = 2,0
+mask = 1
+
+[TitleBG 03] ;Help box
+type = anim
+actionno = 3
+layerno = 1
+mask = 1
+
+;-----[ANIMATION CODE]-------
+[Begin Action 3]
+3,0,0,0,30
+3,1,0,0,60
+3,2,0,0,1800
+
+;----------------------------
+[Infobox]
+text.font = 5,0,1
+
+;----------------------------
+[Infobox Text]
+WARNING : THIS IS GAME IS A FANGAME MADE FOR AN ENTERTAINMENT PURPOSE
+
+TITLE : DRAGON BALL - LAST BATTLE
+VERSION : 1.0
+AUTHOR : SUIJOART
+
+HELP AND CREDITS IN HELP.PDF FILE
+;----------------------------
+[Select Info]
+fadein.time = 10
+fadeout.time = 10
+
+rows = 1
+columns = 12
+wrapping = 0              
+pos = 0,490             
+showemptyboxes = 0        
+moveoveremptyboxes = 0      
+cell.random.switchtime = 5
+
+p1.cursor.startcell = 0,1
+p1.cursor.move.snd = 2,0
+p1.cursor.done.snd = 4,0
+p1.random.move.snd = 1,0
+p2.cursor.startcell = 0,9
+p2.cursor.blink = 0       
+p2.cursor.move.snd = 2,0
+p2.cursor.done.snd = 4,0
+p2.random.move.snd = 1,0
+random.move.snd.cancel = 1
+stage.move.snd = 3,0
+stage.done.snd = 5,0
+cancel.snd = 6,0
+
+portrait.spr = 9000,0     
+portrait.offset = 0,0
+portrait.scale = 1,1
+
+p1.face.spr = 9000,1      
+p1.face.offset = -208,72    
+p1.face.scale = 0.5,0.5
+p1.face.facing = 1
+p2.face.spr = 9000,1
+p2.face.offset = 847,72
+p2.face.scale = 0.5,0.5
+p2.face.facing = -1
+
+p1.name.offset = 1,112  
+p1.name.font = 4,0,1     
+p2.name.offset = 368,112
+p2.name.font = 4,0,1
+
+stage.pos = 180,240
+stage.active.font = 2,0,1
+stage.active2.font = 2,0,1, 255,255,0  
+stage.done.font = 2,0,1, 0,255,0
+
+;----------------------------
+[SelectBGdef]
+
+[SelectBG 00] ;Clouds Background 
+type = normal
+spriteno = 4,0
+
+[SelectBG 01] ;Menu
+type = normal
+spriteno = 5,0
+layerno = 0
+mask = 1
+
+[SelectBG 02] ;Help box
+type = anim
+actionno = 6
+layerno = 1
+mask = 1
+
+[Begin Action 6]
+6,0,0,0,60
+6,1,0,0,180
+6,2,0,0,1800
+;----------------------------
+[VS Screen]
+time = 600               
+fadein.time = 15
+fadeout.time = 15
+match.text = "GET READY\n\n\n\n\n\n\n\n\n\nMATCH %i"   
+match.offset = 310, 100
+match.font = 3,0,0, 255,0,0
+
+p1.spr = 9000, 1
+p1.offset =  9999999,9999999
+p1.facing = 1
+p1.scale = 1,1
+p2.spr = 9000, 1
+p2.offset = 9999999,9999999
+p2.facing = -1
+p2.scale = 1,1
+
+p1.name.offset  =  9999999,9999999
+p1.name.font =   3,0,0
+p2.name.offset  = 9999999,9999999
+p2.name.font =   3,0,0
+;----------------------------
+[VersusBGdef] 
+bgclearcolor = 255,255,255
+
+[VersusBG 00] ;Clouds
+type = normal
+spriteno = 1,0
+mask = 1
+tile = 1,0
+velocity = -1,0
+
+[VersusBG 02] ;Loading
+type = anim
+actionno = 7
+mask = 1
+
+[Begin Action 7]
+7,0,0,0,10
+7,1,0,0,10
+7,2,0,0,10
+;----------------------------
+[Demo Mode]
+enabled = 0               
+select.enabled = 0        
+vsscreen.enabled = 0 
+title.waittime = 16200      
+fight.endtime = 1500  
+fight.playbgm = 0         
+fight.stopbgm = 1		 
+fight.bars.display = 0    
+intro.waitcycles = 1   
+debuginfo = 0             
+;---------------------------- 
+[Continue Screen]
+enabled = 0              
+pos = 0,0
+continue.spr = 17,0
+continue.offset = 0,0
+yes.spr = 18,0
+yes.offset = 560,14
+no.spr = 19,0
+no.offset = 494,14
+;----------------------------
+[Game Over Screen]
+enabled = 1          
+storyboard = Game_Over.def
+;----------------------------
+[Victory Screen]
+enabled = 0
+time = 300               
+fadein.time = 15
+fadeout.time = 15
+
+p1.offset = 0,240
+p1.spr = 9000,1
+p1.facing = 1
+p1.scale = 0.5,0.5
+p1.name.offset = 354,258
+p1.name.font = 2,0,1
+
+winquote.text = "Winner!" 
+winquote.offset = 20,192
+winquote.font = 2,0,1
+winquote.window = 18,171, 301,228
+winquote.textwrap = w    
+;----------------------------
+[VictoryBGdef] 
+bgclearcolor = 0,0,0
+;----------------------------
+[Win Screen]
+enabled = 1               
+wintext.spr = 8,0
+wintext.offset = 0,0
+wintext.displaytime = -1
+wintext.layerno = 2
+fadein.time = 15
+pose.time = 300
+fadeout.time = 15
+;----------------------------
+[Default Ending]
+enabled = 1               
+storyboard = End.def             
+;----------------------------
+[End Credits]
+enabled = 0               
+storyboard =              
+;----------------------------
+[Survival Results Screen]
+enabled = 0
+winstext.text = "Score : %i"  
+winstext.font = 2,0,0, 1,0,à
+winstext.offset =  320, 80
+winstext.displaytime = -1
+winstext.layerno = 2
+fadein.time = 15
+show.time = 3660
+fadeout.time = 15
+roundstowin = 12         
+;----------------------------
+[Option Info]
+cursor.move.snd = 1,0
+cursor.done.snd = 4,0
+cancel.snd = 6,0
+;----------------------------
+[OptionBGdef] 
+
+[OptionBG 00] ;Background Shenron
+type = normal
+spriteno = 0,0
+
+[OptionBG 01] ;Clouds
+type = normal
+spriteno = 1,0
+mask = 1
+tile = 1,0
+velocity = -1,0
+
+[OptionBG 02] ;Menu
+type = normal
+spriteno = 9,0
+mask = 1
+
+[OptionBG 03] ;Help box
+type = anim
+actionno = 10
+layerno = 1
+mask = 1
+
+[Begin Action 10]
+10,0,0,0,60
+10,1,0,0,180
+10,2,0,0,1800

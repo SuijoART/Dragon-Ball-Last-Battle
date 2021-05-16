@@ -1,0 +1,89 @@
+;----------------------------
+[Info]
+name = "Grassland"
+displayname = "GRASSLAND" 
+versiondate = 05,02,2020   
+mugenversion = 1.0        
+author = "SuijoART"       
+;----------------------------
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -125
+boundright = 125
+boundhigh = 0
+boundlow = 0
+verticalfollow = 0
+floortension = 0
+
+tension = 50
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 1
+cutlow = 1
+;----------------------------
+[PlayerInfo]
+p1startx = -120         
+p1starty = 0         
+p1facing = 1 
+
+p2startx = 120
+p2starty = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000
+;----------------------------
+[Bound]
+screenleft = 30 
+screenright = 30
+;----------------------------
+[StageInfo]
+zoffset = 447
+autoturn = 1
+resetBG = 0
+localcoord = 640, 480
+xscale = 1
+yscale = 1
+;----------------------------
+[Shadow]
+intensity = 0
+color = 0,0,0
+yscale = 0
+fade.range = 0,0
+;----------------------------
+[Reflection]
+intensity = 0
+;----------------------------
+[Music]
+bgmusic = Sound\Grassland.mp3
+bgmloopstart = 
+bgmloopend = 
+bgmvolume = 100
+;----------------------------
+[BGdef]
+spr = Grassland.sff
+debugbg = 1
+;----------------------------
+[BG Background]
+type  = normal
+spriteno = 0, 0
+
+[BG Sun]
+type  = normal
+spriteno = 1, 0
+mask = 1
+
+[BG Clouds]
+type  = normal
+spriteno = 2, 0
+mask = 1
+velocity = -1,0
+tile = 1,0
+tilespacing = 0,0
+
+[BG Platform]
+type  = normal
+spriteno = 3, 0
+mask = 1
